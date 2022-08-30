@@ -1,7 +1,34 @@
+body{
+    background-image:linear-gradient(to right ,red,yellow)
+}
+
+
 td{
     Width: 50px;
     padding-left: 10px;
 }
-table{
-        margin-top:30px;
-    }
+
+.tableContainer{
+    display:flex;
+    justify-content:center;
+}
+
+.heading{
+    text-align:center;
+}
+
+h5{
+    text-align:center;
+}
+
+checkButton{
+    margin-top:50px;
+}
+input{
+    margin-bottom: 20px;
+}
+
+.input-form{
+    text-align:center;
+    
+}

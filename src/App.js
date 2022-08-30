@@ -51,13 +51,18 @@ const calculateDenomination = (returnAmount) => {
     <div>
         <h1 className="heading">Cash Register Manager</h1>
         <h5>Enter the bill amount and cash given by the customer and know minimum number of notes to return</h5>
+        
+
+
+        <form className='input-form'>
         <h3>Bill Amount</h3>
         <input type="number" value={billAmount} onChange={(e)=>setbillAmount(e.target.value)}></input>
         <h3>Cash Given</h3>
         <input type="number" value={cashGiven} onChange={(e)=>setcashGiven(e.target.value)}></input>
         <br></br>
-        <input type="button" value="Check" onClick={calculateChange}></input>
-        <table border="black">
+        <input className='checkButtton' type="button" value="Check" onClick={calculateChange}></input>
+        <div className='tableContainer'>
+        <table  className='outputTable' border="black">
             <tbody>
             <tr>
                 <th>No of Notes</th>
@@ -75,6 +80,8 @@ const calculateDenomination = (returnAmount) => {
             </tr>
             </tbody>
         </table>
+        </div>
+        </form>
     </div>
   )
 }
